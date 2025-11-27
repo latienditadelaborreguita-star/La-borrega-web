@@ -22,10 +22,12 @@
   }
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
     background: #f5f7fa;
     color: #1e293b;
     line-height: 1.6;
+    overflow-x: hidden; /* evita scroll horizontal en móviles */
   }
   header {
     background: #0f172a;
@@ -67,7 +69,7 @@
   }
 
   main {
-    max-width: 900px;
+    max-width: 960px;  /* se ve mejor en monitores grandes */
     margin: 50px auto 70px;
     padding: 0 25px;
   }
@@ -159,8 +161,8 @@
     box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
   }
 
-  /* Responsive */
-  @media(max-width: 820px) {
+  /* Responsive: laptops, tablets y móviles */
+  @media (max-width: 1024px) {
     main {
       padding: 0 15px;
       margin-top: 30px;
@@ -172,9 +174,38 @@
     }
     .blog-post {
       flex-direction: column;
+      align-items: flex-start;
     }
-    .post-img, .post-content {
+    .post-img,
+    .post-content {
       flex: 1 1 100%;
+    }
+    .post-content {
+      padding-top: 10px;
+    }
+  }
+
+  /* Ajuste extra para móviles pequeños */
+  @media (max-width: 480px) {
+    header {
+      padding: 15px 20px;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      gap: 12px;
+      font-size: 0.9rem;
+    }
+    .blog-post {
+      padding: 18px 18px;
+    }
+    .post-title {
+      font-size: 1.3rem;
+    }
+    .post-excerpt {
+      font-size: 1rem;
     }
   }
 </style>
