@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>El Borrego Friki - La Tiendita de la Borreguita</title>
+<link rel="icon" href="favicon_borrego.png" type="image/jpeg" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TG8LPJKHZB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TG8LPJKHZB');
+</script>
+
+
+<style>
+  /* Reset y base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background: #f5f7fa;
+    color: #1e293b;
+    line-height: 1.6;
+  }
+  header {
+    background: #0f172a;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #f1f5f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+    margin: 0;
+    color: #e0e7ff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    font-weight: 600;
+  }
+  nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
+  }
+  nav a:hover, nav a:focus {
+    background-color: #3b82f6;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 8px #3b82f6;
+  }
+
+  main {
+    max-width: 1150px;
+    margin: 50px auto 70px;
+    padding: 0 25px;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #334155;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    margin-bottom: 38px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+  }
+
+  .product-card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 14px 25px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-card:hover, .product-card:focus {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.35);
+    outline: none;
+  }
+
+  .product-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .product-info {
+    padding: 20px 18px 25px 18px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+  }
+  .product-desc {
+    color: #475569;
+    font-size: 1rem;
+    flex-grow: 1;
+    margin-bottom: 15px;
+  }
+  .product-category {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #3b82f6;
+    text-transform: uppercase;
+  }
+
+  footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 22px 20px;
+    font-size: 0.9rem;
+    letter-spacing: 0.6px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+  }
+
+  /* Responsive */
+  @media(max-width: 820px) {
+    main {
+      padding: 0 15px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+    .section-title {
+      font-size: 2.3rem;
+      margin-bottom: 28px;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>La Tiendita de la Borreguita</h1>
+   <nav role="navigation">
+    <a href="Seccion-1_Inicio-La-tiendita.html">Inicio</a>
+    <a href="Seccion-2_Somos.html">Quiénes somos</a>
+    <a href="Seccion-3_Borrega.html">La Borrega</a>
+    <a href="Seccion-4_EL-borrego.html">El Borrego Friki</a>
+    <a href="Seccion-5_Novedades.html">Novedades</a>
+    <a href="Seccion-6_Blog.html">Blog</a>
+    <a href="Seccion-7_COntacto.html">Contacto</a>
+    <a href="Seccion-8_Ubicacion.html">Ubicación</a>
+    <a href="Seccion-9_Preguntas-frecuntes.html">Preguntas frecuentes</a>
+    <a href="Seccion-10_Politicas.html">Política</a>
+  </nav>
+</header>
+
+  <main>
+    <h2 class="section-title">El Borrego Friki - Productos</h2>
+    <div class="product-grid" aria-label="Catálogo de productos de El Borrego Friki">
+      <article class="product-card" tabindex="0">
+        <img class="product-img" src="Bebidas en bolsa.jpg" alt="Bebidas asiaticas" />
+        <div class="product-info">
+          <h3 class="product-title">Bebidas asiaticas</h3>
+          <p class="product-desc">Refrescantes bebidas importadas con sabores únicos de la mejor calidad.</p>
+          <p class="product-category">Bebidas asiaticas</p>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0">
+        <img class="product-img" src="Mangas.jpg" alt="Mangas" />
+        <div class="product-info">
+          <h3 class="product-title">Mangas</h3>
+          <p class="product-desc">Volumenes de tus animes favoritos para disfrutar en cada momento del día.</p>
+          <p class="product-category">Mangas</p>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0">
+        <img class="product-img" src="Comics.jpg" alt="Comic de superhéroes" />
+        <div class="product-info">
+          <h3 class="product-title">Comic de Superhéroes</h3>
+          <p class="product-desc">Historias emocionantes llenas de acción y aventura para todas las edades.</p>
+          <p class="product-category">Comic</p>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0">
+        <img class="product-img" src="Posters.jpeg" alt="Posters" />
+        <div class="product-info">
+          <h3 class="product-title">Posters</h3>
+          <p class="product-desc">Impresión de alta calidad para decorar tu habitación o espacio favorito con gran variedad para todo publico.</p>
+          <p class="product-category">Posters</p>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0">
+        <img class="product-img" src="Snacks.jpeg" alt="Snacks asiaticos" />
+        <div class="product-info">
+          <h3 class="product-title">Snacks importados</h3>
+          <p class="product-desc">Deliciosos y sabrosos, ideales para los amantes de los sabores nuevos, fans de doramas, anime y series con variedad para elegir.</p>
+          <p class="product-category">Snacks Importados</p>
+        </div>
+      </article>
+
+      <article class="product-card" tabindex="0">
+        <img class="product-img" src="figuras.jpeg" alt="Figuras" />
+        <div class="product-info">
+          <h3 class="product-title">Figuras</h3>
+          <p class="product-desc">Variedad de figuras de diferentes series, animes y videojuegos.</p>
+          <p class="product-category">Figuras</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 La Tiendita de la Borreguita | Daryson & Bryan Bernal | Puerto Vallarta, Jalisco</p>
+  </footer>
+</body>
+</html>
